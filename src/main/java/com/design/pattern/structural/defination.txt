@@ -1,0 +1,50 @@
+Structural
+---------------
+how we arrange our classes and objects to get functionality or behaviour.
+By using composition or inheritence or both.
+
+Adapter
+Bridge
+Decorator
+Composite
+Facade
+Flyweight
+Proxy
+
+Adapter / Wrapper
+---------------------------------------------
+We have an existing object that provides the functionality that client needs. But client code cant use this object because it expects an object with different interface.
+
+Using adapter design pattern we make this existing object work with client by adapting the object to client's expected interface.
+
+Class / two-way Adapter  (inheritence)
+Object Adapter (Composition)
+
+Ex: java.io.InputStreamReader and InputStreamWriter
+
+* complexcity or work depends upon the difference between target interface and object being adapted.
+* Object Adapter because subclass and inheritence not allowed.
+
+Bridge
+-----------------------------------------------
+Using bridge pattern we can decouple implementation and abstract without affecting each other.
+
+Ex: java.sql.Driver
+
+
+
+
+Decorator
+---------------------------------------------
+When we want to enhance behaviour of our existing object dynamically as and when required the we can use decorator design pattern.
+A decorator provides alternative to subclassing for extending functionality of existing classes. 
+Recursive Composition
+
+java.io.BufferedOutputStream
+
+
+Composite 
+----------------------------------------------
+We have a part-whole relationship or hierarchy of objects and we want to be able to treat all objects in this hierarchy uniformly.
+
+Think of composite pattern when dealing with tree structure of objects.
